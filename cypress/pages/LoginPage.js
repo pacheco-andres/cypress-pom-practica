@@ -26,6 +26,10 @@ class LoginPage {
     this.passwordInput.type(password)
     this.loginButton.click()
   }
+
+    loginAsStandardUser() {
+    this.login('standard_user', 'secret_sauce')
+  }
 }
 
 export default new LoginPage()
